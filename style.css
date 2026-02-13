@@ -1,0 +1,85 @@
+:root {
+  /* Primary colors */
+  --color-gold: #ffbe0b;
+  --color-orange: #fb5607;
+  --color-pink: #ff006e;
+  --color-violet: #8338ec;
+  --color-blue: #3a86ff;
+  --color-white: #ffffff;
+
+  --bs-primary: var(--color-blue);
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: clip;
+  font-family: "Silkscreen", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: var(--color-violet);
+  color: var(--color-white);
+  font-size: 20px;
+}
+
+strong {
+  font-family: "Silkscreen", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+h1 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+.hands {
+  display: flex;
+  justify-content: flex-end; /* aligns content to the right */
+  gap: 16px; /* optional spacing */
+  border-bottom: 2px solid white;
+}
+.responsive-img {
+  max-width: 100%;
+  margin: 1rem auto 1rem auto;
+  height: auto;
+  display: block; /* removes inline spacing */
+}
+.btn {
+  font-size: 1.6rem;
+}
+
+.btn small {
+  display: block;
+  font-size: 1rem;
+}
+
+.btn-gold {
+  --bs-btn-color: #000;
+  --bs-btn-bg: var(--color-gold);
+  --bs-btn-border-color: var(--color-gold);
+  --bs-btn-hover-bg: #e6ab0a;
+  --bs-btn-hover-border-color: #e6ab0a;
+  --bs-btn-active-bg: #cc9809;
+  --bs-btn-active-border-color: #cc9809;
+}
+.btn-orange {
+  --bs-btn-color: var(--color-white);
+  --bs-btn-bg: var(--color-orange);
+  --bs-btn-border-color: var(--color-orange);
+  --bs-btn-hover-bg: #e14d06;
+  --bs-btn-hover-border-color: #e14d06;
+  --bs-btn-active-bg: #c84305;
+  --bs-btn-active-border-color: #c84305;
+}
+.btn-pink {
+  --bs-btn-color: var(--color-white);
+  --bs-btn-bg: var(--color-pink);
+  --bs-btn-border-color: var(--color-pink);
+  --bs-btn-hover-bg: #e60063;
+  --bs-btn-hover-border-color: #e60063;
+  --bs-btn-active-bg: #cc0058;
+  --bs-btn-active-border-color: #cc0058;
+}

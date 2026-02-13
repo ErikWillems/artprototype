@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Signaalgesprek - Je publiek weet meer dan je denkt.</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"
+      integrity="sha384-CjloA8y00+1SDAUkjs099PVfnY2KmDC2BZnws9kh8D/lX1s46w6EPhpXdqMfjK6i"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="hands mt-2 pb-2 mb-2" style="opacity: 0.5">
+          <img class="hand-left" src="hand-left-0.png" /><img
+            class="hand-right"
+            src="hand-right-0.png"
+          />
+        </div>
+      </div>
+      <div class="container question">
+        <h1 class="mt-3">Hoeveel handen heb je?</h1>
+        <div class="mt-4 d-grid gap-2 col-12 mx-auto">
+          <button data-action="next" data-hands="2" class="btn btn-gold">
+            2
+          </button>
+          <button data-action="next" data-hands="1" class="btn btn-orange">
+            1
+          </button>
+          <button data-action="next" data-hands="0" class="btn btn-pink">
+            0
+          </button>
+        </div>
+      </div>
+      <div class="container question">
+        <h1 class="mt-3">Hoeveel vingers heb je?</h1>
+        <div class="mt-4 d-grid gap-2 col-12 mx-auto">
+          <button data-action="next" data-fingers="10" class="btn btn-pink">
+            10
+          </button>
+          <button data-action="next" data-fingers="8" class="btn btn-pink">
+            8
+          </button>
+          <button data-action="next" data-fingers="6" class="btn btn-pink">
+            6
+          </button>
+          <button data-action="next" data-fingers="4" class="btn btn-pink">
+            4
+          </button>
+          <button data-action="next" data-fingers="2" class="btn btn-pink">
+            2
+          </button>
+          <button data-action="next" data-fingers="0" class="btn btn-pink">
+            0
+          </button>
+        </div>
+      </div>
+      <div class="container question">
+        <img src="holes.png" class="responsive-img" />
+        <h1 class="mt-3">Zes zachte gaten. Vier hoog, twee laag</h1>
+        <p class="mt-4">Staand of ga je op je knieen?</p>
+        <div class="mt-4 d-grid gap-2 col-12 mx-auto">
+          <button class="btn btn-orange">Hoog<small> staand</small></button>
+          <button class="btn btn-gold">Laag<small>op je knieen</small></button>
+        </div>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
