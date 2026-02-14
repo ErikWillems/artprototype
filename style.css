@@ -43,12 +43,6 @@ p {
   gap: 16px; /* optional spacing */
   border-bottom: 2px solid white;
 }
-.responsive-img {
-  max-width: 100%;
-  margin: 1rem auto 1rem auto;
-  height: auto;
-  display: block; /* removes inline spacing */
-}
 .btn {
   font-size: 1.6rem;
 }
@@ -115,26 +109,33 @@ div[data-action].active {
 div[data-action].done {
   transform: translateX(-100%);
 }
-div[data-action] h1 {
+div[data-action] h1,
+div[data-action] p {
   margin-bottom: 1rem;
   position: relative;
 }
 
-div[data-action] h1 span:first-child {
+div[data-action] h1 span:first-child,
+div[data-action] p span:first-child {
   visibility: hidden;
 }
 
-div[data-action] h1 span:last-child {
+div[data-action] h1 span:last-child,
+div[data-action] p span:last-child {
   position: absolute;
   top: 0;
   left: 0;
-}
-div[data-action] p {
-  margin-bottom: 1rem;
 }
 
 div[data-action] button {
   display: block;
   width: 100%;
   margin-top: 0.5rem;
+}
+
+div[data-action] img {
+  max-width: 100%;
+  margin: 1rem auto 1rem auto;
+  height: auto;
+  display: block; /* removes inline spacing */
 }
