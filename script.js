@@ -3,7 +3,7 @@
   let gameHands = 0;
   let gameFingers = 0;
 
-  d3.selectAll(".container[data-action] button").on("click", function () {
+  d3.selectAll("div[data-action] button").on("click", function () {
     const button = d3.select(this);
     const action = button.attr("data-action");
     const hands = button.attr("data-hands");
@@ -23,7 +23,7 @@
   });
 
   const digest = function () {
-    d3.selectAll(".container[data-action]").each(function () {
+    d3.selectAll("div[data-action]").each(function () {
       if (d3.select(this).attr("data-action") === gameAction) {
         d3.select(this).classed("active", true);
       } else {

@@ -89,21 +89,28 @@ p {
   transform: scaleX(-1);
 }
 
-.containers {
+.container.actions {
   position: relative;
 }
-.container[data-action] {
+
+.container.actions > div {
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
+}
+div[data-action] {
   position: absolute;
+  width: 100%;
   top: 0;
   left: 0;
 
   transform: translateX(100%);
   transition: transform 0.3s;
 }
-.container[data-action].active {
+div[data-action].active {
   transform: translateX(0%);
 }
 
-.container[data-action].done {
+div[data-action].done {
   transform: translateX(-100%);
 }
