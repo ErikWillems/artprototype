@@ -98,6 +98,7 @@ p {
   position: relative;
   height: 100vh;
 }
+
 div[data-action] {
   position: absolute;
   width: 100%;
@@ -113,4 +114,16 @@ div[data-action].active {
 
 div[data-action].done {
   transform: translateX(-100%);
+}
+div[data-action] h1 {
+  margin-bottom: 1rem;
+}
+div[data-action] p {
+  margin-bottom: 1rem;
+}
+
+div[data-action] button {
+  display: block;
+  width: 100%;
+  margin-top: 0.5rem;
 }
