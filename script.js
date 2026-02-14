@@ -53,7 +53,11 @@
   const digest = function () {
     d3.selectAll("div[data-action]").each(function () {
       if (d3.select(this).attr("data-action") === gameAction) {
-        d3.select(this).classed("active", true);
+        d3.select(this).classed("active", true).classed("done", false);
+        d3.select("body").classed(
+          "danger",
+          typeof d3.select(this).attr("data-danger") === "string",
+        );
       } else {
         if (d3.select(this).classed("active")) {
           d3.select(this).classed("active", false);
