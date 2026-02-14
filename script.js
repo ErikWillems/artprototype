@@ -23,9 +23,15 @@
   });
 
   const digest = function () {
-    d3.selectAll(".container[data-action]").classed("d-none", function () {
-      console.log(d3.select(this).attr("data-action"), gameAction);
-      return d3.select(this).attr("data-action") !== gameAction;
+    d3.selectAll(".container[data-action]").each(function () {
+      if (d3.select(this).attr("data-action") === gameAction) {
+        d3.select(this).classed("active", true);
+      } else {
+        if (d3.select(this).classed("active")) {
+          d3.select(this).classed("active", false);
+          d3.select(this).classed("done", true);
+        }
+      }
     });
 
     digestHands();
