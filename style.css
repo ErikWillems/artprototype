@@ -83,3 +83,6 @@ p {
   --bs-btn-active-bg: #cc0058;
   --bs-btn-active-border-color: #cc0058;
 }
+.flip-x {
+  transform: scaleX(-1);
+}
